@@ -2,10 +2,14 @@
 
 int main() {
     printf("hello world\n");
+    return 0;
 }
 
 char *myStrcpy(char *dest, const char *src) {
-    return NULL;
+	char *save = dest;
+	while(*dest++ = *src++);
+	return save;
+
 }
 
 size_t myStrlen(const char *string) {
