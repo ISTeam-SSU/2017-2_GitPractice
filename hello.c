@@ -16,7 +16,6 @@ char *myStrcat(char *dest, const char *src) {
 	char *tmp = dest;
 	while(*tmp) tmp++;
 	while(*src) *tmp++ = *src++;
-	printf("%s", dest);
 	return dest;
 }
 
