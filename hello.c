@@ -1,7 +1,7 @@
 #include "hello.h"
 
 int main() {
-    printf("hello world\n");
+	printf("hello world\n");
 }
 
 char *myStrcpy(char *dest, const char *src) {
@@ -13,7 +13,10 @@ size_t myStrlen(const char *string) {
 }
 
 char *myStrcat(char *dest, const char *src) {
-    return NULL;
+	char *tmp = dest;
+	while(*tmp) tmp++;
+	while(*src) *tmp++ = *src++;
+	return dest;
 }
 
 int myStrcmp(const char *string1, const char *string2) {
